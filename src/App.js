@@ -71,10 +71,39 @@ export default class App extends Component {
     this.setState({
       cartPro : NewShoppingCart
     })
+    let res = this.state.products.filter(pro =>{
+      return pro.id == proID
+    })
+    let index = this.state.products.findIndex(pro =>{
+      return pro.id == proID
+    })
+    res.map(p=>{
+     p.counter = 0
+    })
+    let newObj = [...this.state.products]
+    for(let i =0 ; i<this.state.products.length ; i++){
+      newObj[index]= res[0]
+      console.log(newObj[index]); 
+    }
+   console.log(newObj);
+   this.setState((prev)=>{
+    return{
+      products : [...newObj]
+    }
+   })
   }
   emptyShoppingCart(){
  this.setState({
   cartPro : []
+ })
+ let pros = [...this.state.products]
+ pros.map(p=>{
+   p.counter = 0
+  })
+ this.setState((prev)=>{
+  return{
+    products : [...pros]
+  }
  })
   }
   render() {
