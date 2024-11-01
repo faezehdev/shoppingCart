@@ -1,0 +1,62 @@
+.prolist{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1em;
+    margin: 3em auto;
+}
+.product{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.product .IMG{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product .IMG img{
+    width: 100%;
+    object-fit: cover;
+}
+.product .det{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+}
+.product .det .price{
+    font-size: 20px;
+    color: grey;
+    font-weight: 500;
+}
+.product .det .addToCart,
+button.remove,
+.RemoveAll{
+    width: max-content;
+    padding: .5em .8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(7, 44, 7);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -moz-transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -ms-transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.product .det .addToCart:hover{
+    cursor: pointer;
+    background-color: rgb(110, 144, 76);
+}

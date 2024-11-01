@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Cart-C{
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 2em;
+}
+.Cart-C .title{
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+h1{
+  font-size: 25px;
+  color: rgb(7, 44, 7);
+  font-weight: 800;
+  font-style: italic;
 }
+.Carts{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Carts .cart-titles,.cart{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1.5em;
+}
+.Carts .cart-titles span,
+.cart span{
+  width: 100%;
+  font-size: 18px;
+  color: rgb(7, 44, 7);
+  font-weight: 800;
+  font-style: italic;
+  border-bottom: 1px solid rgb(251, 251, 71);
+  display: flex;
+  justify-content: flex-start;
+  
+}
+.cart span{
+  min-height: 40px;
+  padding: 1em 0;
+}
+.carts-container{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.nameImg{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1em;
+}
+.nameImg img{
+  width: 50px;
+  height: 100%;
+}
+.nameImg h2{
+  font-size: 12px;
+}
+.cart .price{
+font-size: 12px;
+height: 51px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+.Count,.Counter{
+  margin-left: 50px;
 }
